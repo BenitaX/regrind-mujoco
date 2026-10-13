@@ -7,15 +7,7 @@
 Python module serving as a project/extension template.
 """
 
-try:
-    # Register Gym environments (requires Isaac Sim runtime).
-    from .tasks import *
+from .mujoco import register_tasks
 
-except (ImportError, ModuleNotFoundError) as e:
-    import warnings
-
-    warnings.warn(
-        f"regrind: Isaac Sim / omni not available — {e}. Sim-free submodules (data, modules) are still importable.",
-        stacklevel=2,
-    )
+register_tasks()
 
