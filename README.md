@@ -49,7 +49,7 @@ Clone the repository:
 ```bash
 mkdir -p ~/projects
 cd ~/projects
-git clone https://github.com/yunhaif/regrind.git
+git clone https://github.com/BenitaX/regrind-mujoco.git
 cd regrind
 git lfs install
 git lfs pull
